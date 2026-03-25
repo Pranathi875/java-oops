@@ -1,0 +1,25 @@
+class ChaiShop{
+    String s;
+    int cupsSold;
+    public static void display(String str){
+        System.out.println("display function: "+str);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop();
+        branch1.s="Primary branch";
+        branch1.cupsSold=5;
+        ChaiShop branch2=new ChaiShop();
+        branch2.s="Secondary branch";
+        branch2.cupsSold=6;
+        System.out.println(branch1.s);
+        System.out.println(branch1.cupsSold);
+        System.out.println(branch2.s);
+        System.out.println(branch2.cupsSold);
+        branch1.display("Pranathi");
+        branch2.display("Vasavi");
+        
+    }
+}
