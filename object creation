@@ -1,0 +1,19 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class ChaiShop{//first letter capital
+    String branchName;
+    int cupsSold;
+}
+class Main {
+    public static void main(String[] args) {
+  
+   ChaiShop branch1=new ChaiShop();//datatype name,variable,new,datatype name
+   branch1.branchName="kite";
+   branch1.cupsSold=5;
+   System.out.println(branch1.branchName);
+    System.out.println(branch1.cupsSold);
+   
+    
+      
+    }
+}
