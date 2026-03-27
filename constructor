@@ -3,9 +3,13 @@ class ChaiShop{
     int cupsSold;
     int cost;
     public ChaiShop(String s,int cupsSold,int cost){
+        this.s=s;
+        this.cupsSold=cupsSold;
+        this.cost=cost;
         System.out.println(s);
         System.out.println(cupsSold);
         System.out.println(cost);
+        
         
     }
     public void display(int i){
@@ -15,6 +19,9 @@ class ChaiShop{
 class Main {
     public static void main(String[] args) {
         ChaiShop branch1=new ChaiShop("Pranathi",5,20);
-        branch1.display(6);
+         System.out.println(branch1.s);
+         System.out.println(branch1.cupsSold);
+         System.out.println(branch1.cost);
+        
     }
 }
