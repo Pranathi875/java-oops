@@ -1,0 +1,37 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class ChaiShop{
+    String s;
+    int cupsSold;
+    int cost;
+    public ChaiShop(String s,int cupsSold,int cost){
+        this.s=s;
+        this.cupsSold=cupsSold;
+        this.cost=cost;
+    }
+    public void display(){
+       System.out.println(s);
+       System.out.println(cupsSold);
+       System.out.println(cost);
+        revenue();
+    }
+    public  void revenue(){
+        System.out.println("revenue: "+(cupsSold*cost));
+    }
+    public void orderChai(int noOfPpl){
+       cupsSold+=noOfPpl; 
+    }
+}
+class Main {
+    public static void main(String[] args) {
+       ChaiShop branch1=new ChaiShop("A",0,8);
+       ChaiShop branch2=new ChaiShop("B",5,10);
+     
+       branch1.orderChai(4);
+       branch1.orderChai(5);
+       branch1.orderChai(6);
+      
+        branch1.display();
+       
+    }
+}
