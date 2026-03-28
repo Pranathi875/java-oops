@@ -1,0 +1,27 @@
+class ChaiShop{
+    String s;
+    int cupsSold;
+    int cost;
+    public ChaiShop(String s,int cupsSold,int cost){
+        this.s=s;
+        this.cupsSold=cupsSold;
+        this.cost=cost;
+    }
+    public void display(){
+        System.out.println("hello...."+s);
+    }
+    public  void revenue(){
+        System.out.println("revenue: "+(cupsSold*cost));
+    }
+}
+class Main {
+    public static void main(String[] args) {
+       ChaiShop branch1=new ChaiShop("A",4,8);
+       branch1.display();
+       branch1.revenue();
+       ChaiShop branch2=new ChaiShop("B",5,10);
+       branch2.display();
+       branch2.revenue();
+       
+    }
+}
